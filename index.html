@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -19,13 +19,13 @@
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <!-- Immagine -->
-                 <div class="row align-items-center col-6">
-                     <img class="navbar-brand duck" src="./img/duck.png " alt="duck-logo">
-                     <div class="text-light col d-none d-sm-none d-md-none d-lg-block ">Catalogo libri</div>
-                     <div class="text-white-50 col d-none d-sm-none d-md-none d-lg-block">Anagrafica utenti</div>
-                     <div class="text-white-50 col d-none d-sm-none d-md-none d-lg-block">Storico prestiti</div>
-                     <div class="text-white-50 col d-none d-sm-none d-md-none d-lg-block">Help</div>
-                    </div>
+                <div class="row align-items-center col-6">
+                    <img class="navbar-brand duck" src="./img/duck.png " alt="duck-logo">
+                    <div class="text-light col d-none d-sm-none d-md-none d-lg-block ">Catalogo libri</div>
+                    <div class="text-white-50 col d-none d-sm-none d-md-none d-lg-block">Anagrafica utenti</div>
+                    <div class="text-white-50 col d-none d-sm-none d-md-none d-lg-block">Storico prestiti</div>
+                    <div class="text-white-50 col d-none d-sm-none d-md-none d-lg-block">Help</div>
+                </div>
                 <!-- Ricerca -->
                 <nav class="navbar bg-body-black d-none d-sm-none d-md-none d-lg-block">
                     <div class="container-fluid">
@@ -70,226 +70,233 @@
         </nav>
     </header>
 
-    <main class="container">
-        <!--TITOLO E BOTTONE -->
-        <div class="d-flex  justify-content-between">
-            <div class="align-content-center">
-                <h2>Catalogo Libri</h2>
+    <main class="container d-lg-flex justify-content-lg-around">
+        <!--primo contenitore-->
+        <div class="col-lg-7">
+            <!--TITOLO E BOTTONE -->
+            <div class="d-flex mb-4 justify-content-between">
+                <div class="align-content-center">
+                    <h2>Catalogo Libri</h2>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg ">Aggiungi Libro</button>
             </div>
-            <button type="button" class="btn btn-primary btn-lg ">Aggiungi Libro</button>
+
+            <!-- Tabella -->
+            <div class=" mb-4">
+                <table class="table table-striped">
+                    <!-- Header -->
+                    <thead>
+                        <tr>
+                            <th scope="col" class="col-6 col-md-6 col-lg-5">Titolo</th>
+                            <th scope="col" class="d-none d-md-table-cell col-md-2 col-lg-2">Data presito</th>
+                            <th scope="col" class="col-3 col-md-2 col-lg-2">Stato</th>
+                            <th scope="col" class="col-3 col-md-2 col-lg-3 text-center">Azioni</th>
+                        </tr>
+                    </thead>
+                    <!-- corpo tabella -->
+                    <tbody>
+                        <!-- Riga 1 -->
+                        <tr>
+                            <td>I pilastri della terra</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge bg-success">Disponibile</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Riga 2 -->
+                        <tr>
+                            <td>I promessi sposi</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge bg-success">Disponibile</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Riga 3 -->
+                        <tr>
+                            <td>Il signore degli anelli</td>
+                            <td class="d-none d-md-table-cell">18/10/2023</td>
+                            <td>
+                                <span class="badge bg-warning text-dark">In prestito</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Riga 4-->
+                        <tr>
+                            <td>Harry Potter e la pietra filosofale</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge bg-success">Disponibile</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Riga 5-->
+                        <tr>
+                            <td>Il codice Da Vinci</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge bg-danger">Non disponibile</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Riga 6 -->
+                        <tr>
+                            <td>Shining</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge bg-success">Disponibile</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Riga 7 -->
+                        <tr>
+                            <td>La divina commedia</td>
+                            <td class="d-none d-md-table-cell">21/09/2023</td>
+                            <td>
+                                <span class="badge bg-warning text-dark">In prestito</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Riga 7 -->
+                        <tr>
+                            <td>Il trono di spade</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge bg-success">Disponibile</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Riga 8 -->
+                        <tr>
+                            <td>Il mondo di Sofia</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge bg-danger">Non disponibile</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Riga 9 -->
+                        <tr>
+                            <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                            <td class="d-none d-md-table-cell">25/07/2023</td>
+                            <td>
+                                <span class="badge bg-warning text-dark">In prestito</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Riga 10 -->
+                        <tr>
+                            <td>Il piccolo principe</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge bg-success">Disponibile</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Riga 11 -->
+                        <tr>
+                            <td>La storia infinita</td>
+                            <td class="d-none d-md-table-cell">-</td>
+                            <td>
+                                <span class="badge bg-success">Disponibile</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary me-2">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
-        <!-- Tabella -->
-        <div class=" my-4">
-            <table class="table table-striped">
-                <!-- Header -->
-                <thead>
-                    <tr>
-                        <th scope="col" class="col-6 col-md-4">Titolo</th>
-                        <th scope="col" class="d-none d-md-table-cell col-md-2">Data presito</th>
-                        <th scope="col" class="col-3 col-md-2">Stato</th>
-                        <th scope="col" class="col-3 col-md-4">Azioni</th>
-                    </tr>
-                </thead>
-                <!-- corpo tabella -->
-                <tbody>
-                    <!-- Riga 1 -->
-                    <tr>
-                        <td>I pilastri della terra</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge bg-success">Disponibile</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-
-                    <!-- Riga 2 -->
-                    <tr>
-                        <td>I promessi sposi</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge bg-success">Disponibile</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- Riga 3 -->
-                    <tr>
-                        <td>Il signore degli anelli</td>
-                        <td class="d-none d-md-table-cell">18/10/2023</td>
-                        <td>
-                            <span class="badge bg-warning text-dark">In prestito</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- Riga 4-->
-                    <tr>
-                        <td>Harry Potter e la pietra filosofale</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge bg-success">Disponibile</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- Riga 5-->
-                    <tr>
-                        <td>Il codice Da Vinci</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge bg-danger">Non disponibile</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- Riga 6 -->
-                    <tr>
-                        <td>Shining</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge bg-success">Disponibile</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- Riga 7 -->
-                    <tr>
-                        <td>La divina commedia</td>
-                        <td class="d-none d-md-table-cell">21/09/2023</td>
-                        <td>
-                            <span class="badge bg-warning text-dark">In prestito</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- Riga 7 -->
-                    <tr>
-                        <td>Il trono di spade</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge bg-success">Disponibile</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- Riga 8 -->
-                    <tr>
-                        <td>Il mondo di Sofia</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge bg-danger">Non disponibile</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- Riga 9 -->
-                    <tr>
-                        <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
-                        <td class="d-none d-md-table-cell">25/07/2023</td>
-                        <td>
-                            <span class="badge bg-warning text-dark">In prestito</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- Riga 10 -->
-                    <tr>
-                        <td>Il piccolo principe</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge bg-success">Disponibile</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- Riga 11 -->
-                    <tr>
-                        <td>La storia infinita</td>
-                        <td class="d-none d-md-table-cell">-</td>
-                        <td>
-                            <span class="badge bg-success">Disponibile</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-pencil"></i>
-                            </button>
-                            <button class="btn btn-sm btn-outline-secondary me-2">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <!--secondo contenitore-->
+        <div class="col-lg-4 ">
             <!--Card con checkbox 1-->
-            <div class="card my-4">
+            <div class="card mb-4 ">
                 <h3 class="card-header">Todo</h3>
                 <div class="card-body">
                     <ul class="list-group">
@@ -313,8 +320,9 @@
                     </ul>
                 </div>
             </div>
-            <!--Card con checkbox 2-->
-            <div class="card my-4">
+
+            <!--Card con accordion 2-->
+            <div class="card mb-4">
                 <h3 class="card-header">F.A.Q.</h3>
                 <div class="card-body">
                     <div class="accordion" id="accordionExample">
@@ -363,6 +371,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </main>
 
 
