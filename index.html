@@ -60,15 +60,215 @@
                 </div>
             </div>
         </nav>
-
     </header>
+
     <main>
-        <div class="d-flex container  justify-content-between">
+        <!--TITOLO E BOTTONE -->
+        <div class="d-flex container justify-content-between">
             <div class="align-content-center">
                 <h2>Catalogo Libri</h2>
             </div>
             <button type="button" class="btn btn-primary btn-lg">Aggiungi Libro</button>
         </div>
+
+        <!-- Tabella -->
+        <div class="mx-3 my-4">
+            <table class="table table-striped">
+                <!-- Header -->
+                <thead>
+                    <tr>
+                        <th scope="col" class="col-6">Titolo</th>
+                        <th scope="col" class="col-3">Stato</th>
+                        <th scope="col" class="col-3">Azioni</th>
+                    </tr>
+                </thead>
+                <!-- corpo tabella -->
+                <tbody>
+                    <!-- Riga 1 -->
+                    <tr>
+                        <td>I pilastri della terra</td>
+                        <td>
+                            <span class="badge bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <!-- Riga 2 -->
+                    <tr>
+                        <td>I promessi sposi</td>
+                        <td>
+                            <span class="badge bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Riga 3 -->
+                    <tr>
+                        <td>Il signore degli anelli</td>
+                        <td>
+                            <span class="badge bg-warning text-dark">In prestito</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Riga 4-->
+                    <tr>
+                        <td>Harry Potter e la pietra filosofale</td>
+                        <td>
+                            <span class="badge bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Riga 5-->
+                    <tr>
+                        <td>Il codice Da Vinci</td>
+                        <td>
+                            <span class="badge bg-danger">Non disponibile</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Riga 6 -->
+                    <tr>
+                        <td>Shining</td>
+                        <td>
+                            <span class="badge bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Riga 7 -->
+                    <tr>
+                        <td>La divina commedia</td>
+                        <td>
+                            <span class="badge bg-warning text-dark">In prestito</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Riga 7 -->
+                    <tr>
+                        <td>Il trono di spade</td>
+                        <td>
+                            <span class="badge bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Riga 8 -->
+                    <tr>
+                        <td>Il mondo di Sofia</td>
+                        <td>
+                            <span class="badge bg-danger">Non disponibile</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Riga 9 -->
+                    <tr>
+                        <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                        <td>
+                            <span class="badge bg-warning text-dark">In prestito</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Riga 10 -->
+                    <tr>
+                        <td>Il piccolo principe</td>
+                        <td>
+                            <span class="badge bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Riga 11 -->
+                    <tr>
+                        <td>La storia infinita</td>
+                        <td>
+                            <span class="badge bg-success">Disponibile</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </table>
+        
     </main>
 
 
